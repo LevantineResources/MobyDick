@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Page 10 - Verified Overlay with Tooltips</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .image-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 3.2vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: black;
+      pointer-events: auto;
+      line-height: 1.4;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      bottom: 100%;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+    .word:hover {
+      background-color: yellow;
+      color: black;
+    }
+
+    .caption55 {top: 30%;right: 52%;width: 50%;}
+    .caption56 {top: 28%;right: 8%;width: 35%;}
+    .caption57 {top: 62%;right: 51%;width: 60%;}
+    .caption58 {top: 59%;right: 8%;width: 31%;}
+    .caption59 {top: 88%;right: 53%;width: 30%;}
+    .caption60 {top: 90%;right: 7%;width: 34%;}
+
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/page10.png" alt="Page 10 Comic">
+    <div class="text-layer">
+      
+      <div class="caption caption55">
+        <span class="word">مِن<span class="tooltip">From</span></span> 
+        <span class="word">وَقِت<span class="tooltip">time</span></span> 
+        <span class="word">لَتَانِي<span class="tooltip">to time</span></span> 
+        <span class="word">كُنَّا<span class="tooltip">we would</span></span> 
+        <span class="word">نِشُوف<span class="tooltip">see</span></span> 
+        <span class="word">سُفُن<span class="tooltip">ships</span></span> 
+        <span class="word">صَيْد<span class="tooltip">hunting</span></span> 
+      </div>
+
+      <div class="caption caption56">
+        <span class="word">شُفْتُوا<span class="tooltip">Have you seen</span></span> 
+        <span class="word">الحُوت<span class="tooltip">the whale</span></span> 
+        <span class="word">الأَبْيَض؟<span class="tooltip">white?</span></span> 
+        <span class="word">حَكُوا!<span class="tooltip">Speak!</span></span> 
+      </div>
+
+      <div class="caption caption57">
+        <span class="word">سَفِينِة<span class="tooltip">The ship</span></span> 
+        <span class="word">الجِيرُوبُوَام<span class="tooltip">Jeroboam</span></span> 
+        <span class="word">كَانِت<span class="tooltip">was</span></span> 
+        <span class="word">مْلَيَانِة<span class="tooltip">filled with</span></span> 
+        <span class="word">جَوّ<span class="tooltip">an atmosphere</span></span> 
+        <span class="word">مْرِيب<span class="tooltip">of eeriness</span></span> 
+      </div>
+
+      <div class="caption caption58">
+        <span class="word">اللِّي<span class="tooltip">Whoever</span></span> 
+        <span class="word">بِيحَاوِل<span class="tooltip">tries</span></span> 
+        <span class="word">يِقْتُل<span class="tooltip">to kill</span></span> 
+        <span class="word">مُوبِي دِك...<span class="tooltip">Moby Dick...</span></span> 
+        <span class="word">رَح<span class="tooltip">will</span></span> 
+        <span class="word">يِنْهَلِك!<span class="tooltip">be destroyed!</span></span> 
+      </div>
+
+      <div class="caption caption59">
+        <span class="word">كِلّ<span class="tooltip">Every</span></span> 
+        <span class="word">وَاحِد<span class="tooltip">one</span></span> 
+        <span class="word">ضَرَب<span class="tooltip">who struck</span></span> 
+        <span class="word">الحُوت,<span class="tooltip">the whale,</span></span> 
+        <span class="word">مَات<span class="tooltip">died</span></span> 
+        <span class="word">بِنِهَايِة<span class="tooltip">in an ending</span></span> 
+        <span class="word">مْرِيبِة...<span class="tooltip">mysterious...</span></span> 
+      </div>
+
+      <div class="caption caption60">
+        <span class="word">هَالْكَلَام<span class="tooltip">These words</span></span> 
+        <span class="word">خَلَّى<span class="tooltip">made</span></span> 
+        <span class="word">البَحَّارَة<span class="tooltip">the sailors</span></span> 
+        <span class="word">عِنَّا<span class="tooltip">among us</span></span> 
+        <span class="word">يِرْتِجُفُوا...<span class="tooltip">tremble...</span></span> 
+      </div>
+
+      
+    </div>
+  </div>
+</body>
+</html>

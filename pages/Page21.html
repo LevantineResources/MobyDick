@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Page 21 - Verified Overlay with Tooltips</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .word:hover {
+      background-color: yellow;
+      color: black;
+    }
+    .image-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 3.2vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: black;
+      pointer-events: auto;
+      line-height: 1.4;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      bottom: 100%;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+
+.caption116 {top: 6%;right: 43%;width: 30%;}
+.caption117 {top: 54%;right: 53%;width: 39%;}
+.caption118 {top: 55%;right: 8%;width: 35%;}
+.caption119 {top: 89%;right: 57%;width: 30%;}
+.caption120 {top: 91%;right: 4%;width: 45%;}
+
+
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/page21.png" alt="Page 21 Comic">
+    <div class="text-layer">
+      
+<div class="caption caption116">
+  <span class="word">يَوْم<span class="tooltip">Day</span></span> 
+  <span class="word">التّاني<span class="tooltip">two</span></span> 
+</div>
+
+<div class="caption caption117">
+  <span class="word">بَكِّير<span class="tooltip">Early</span></span> 
+  <span class="word">التَّانِي<span class="tooltip">the second</span></span> 
+  <span class="word">يَوم...<span class="tooltip">day...</span></span> 
+  <span class="word">وَلَا حَدَا<span class="tooltip">no one</span></span> 
+  <span class="word">حَكَى.<span class="tooltip">spoke</span></span> 
+  <span class="word">كِلّ وَاحِد<span class="tooltip">Everyone</span></span> 
+  <span class="word">يِسْمَع<span class="tooltip">listened to</span></span> 
+  <span class="word">المَيّ<span class="tooltip">the water</span></span> 
+  <span class="word">وَقَلْبُه<span class="tooltip">and his heart</span></span> 
+</div>
+
+<div class="caption caption118">
+  <span class="word">ضَرَبُوه!<span class="tooltip">They struck him!</span></span> 
+  <span class="word">الدَّم<span class="tooltip">Blood</span></span> 
+  <span class="word">طَار<span class="tooltip">flew</span></span> 
+  <span class="word">فِي<span class="tooltip">in</span></span> 
+  <span class="word">السَّمَا.<span class="tooltip">the sky.</span></span> 
+</div>
+
+<div class="caption caption119">
+  <span class="word">الحُوت<span class="tooltip">The whale</span></span> 
+  <span class="word">لَفّ<span class="tooltip">turned</span></span> 
+  <span class="word">وَضَرَب<span class="tooltip">and hit</span></span> 
+  <span class="word">الزَّوْرَق<span class="tooltip">the boat</span></span> 
+  <span class="word">مِتِل<span class="tooltip">like</span></span> 
+  <span class="word">صَخْرِة...<span class="tooltip">a rock...</span></span> 
+  <span class="word">الكِلّ<span class="tooltip">everyone</span></span> 
+  <span class="word">وِقِع.<span class="tooltip">fell.</span></span> 
+</div>
+
+<div class="caption caption120">
+  <span class="word">فِدَلَّا<span class="tooltip">Fedallah</span></span> 
+  <span class="word">مَا<span class="tooltip">did not</span></span> 
+  <span class="word">لْحِق<span class="tooltip">manage</span></span> 
+  <span class="word">يِفْلِت...<span class="tooltip">to escape...</span></span> 
+  <span class="word">الحَبْل<span class="tooltip">the rope</span></span> 
+  <span class="word">سَحَبُه<span class="tooltip">pulled him</span></span> 
+  <span class="word">لتَحِت.<span class="tooltip">down.</span></span> 
+</div>
+
+      
+    </div>
+  </div>
+</body>
+</html>

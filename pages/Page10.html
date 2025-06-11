@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Page 9 - Verified Overlay with Tooltips</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .image-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 3.2vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: black;
+      pointer-events: auto;
+      line-height: 1.4;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      bottom: 0%;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+    .word:hover {
+      background-color: yellow;
+      color: black;
+    }
+    .caption49 {top: 2.5%;right: 58%;width: 27%;}
+    .caption50 {top: 4%;right: 9%;width: 20%;}
+    .caption51 {top: 34%;ri;right: 55%;dth: 15%;}
+    .caption52 {top: 56%;right: 11%;width: 34%;}
+    .caption53a {top: 90%;right: 66%;width: 55%;}
+    .caption53b {top: 68%;right: 57%;width: 55%;}
+    .caption54 {top: 67%;right: 12%;width: 25%;}
+
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/page9.png" alt="Page 9 Comic">
+    <div class="text-layer">
+      <div class="caption caption49">
+        <span class="word">مَيّ<span class="tooltip">water</span></span> 
+        <span class="word">جْدِيدِة<span class="tooltip">fresh</span></span> 
+        <span class="word">وَرِيح<span class="tooltip">and wind</span></span> 
+        <span class="word">جْدِيدِة<span class="tooltip">fresh</span></span> 
+        <span class="word">كِلّ<span class="tooltip">every</span></span> 
+        <span class="word">يَوم<span class="tooltip">day</span></span> 
+        <span class="word">عِنُّه<span class="tooltip">has</span></span> 
+        <span class="word">شِي<span class="tooltip">something</span></span> 
+      </div>
+
+      <div class="caption caption50">
+        <span class="word">بَعْد<span class="tooltip">after</span></span> 
+        <span class="word">أَيَّام<span class="tooltip">days</span></span> 
+        <span class="word">شَفْنَا<span class="tooltip">we saw</span></span> 
+        <span class="word">قَطِيع<span class="tooltip">a group</span></span> 
+        <span class="word">حِيتَان<span class="tooltip">of whales</span></span> 
+      </div>
+
+      <div class="caption caption51">
+        <span class="word">هَي!<span class="tooltip">Hey!</span></span> 
+      </div>
+
+      <div class="caption caption52">
+        <span class="word">كُويكُويغ<span class="tooltip">Queequeg</span></span> 
+        <span class="word">ضَرَب<span class="tooltip">struck</span></span> 
+        <span class="word">الحُوت<span class="tooltip">the whale</span></span> 
+        <span class="word">بْدِقِّة<span class="tooltip">precisely</span></span> 
+        <span class="word">وَقَتَلُه<span class="tooltip">and killed it</span></span> 
+        <span class="word">بْضَرْبَة<span class="tooltip">with a blow</span></span> 
+        <span class="word">وَاحْدِة<span class="tooltip">one</span></span> 
+      </div>
+
+      <div class="caption caption53a">
+        <span class="word">صِيد<span class="tooltip">hunt</span></span> 
+        <span class="word">نَاجِح<span class="tooltip">successful</span></span> 
+        </div>
+
+      <div class="caption caption53b">
+        <span class="word">هَاد<span class="tooltip">this</span></span> 
+        <span class="word">الحُوت<span class="tooltip">whale</span></span> 
+        <span class="word">مَلِيَان<span class="tooltip">is full</span></span> 
+        <span class="word">زِيت<span class="tooltip">of oil</span></span> 
+      </div>
+
+      <div class="caption caption54">
+        <span class="word">قَطَعْنَا<span class="tooltip">we cut</span></span> 
+        <span class="word">الجِسِم<span class="tooltip">the body</span></span> 
+        <span class="word">وَبَلَّشْنَا<span class="tooltip">and began</span></span> 
+        <span class="word">نِغْلِي<span class="tooltip">to boil</span></span> 
+        <span class="word">الدُّهُون<span class="tooltip">the fat</span></span> 
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

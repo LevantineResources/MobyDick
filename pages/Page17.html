@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Page 17 - Verified Overlay with Tooltips</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .word:hover {
+      background-color: yellow;
+      color: black;
+    }
+    .image-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 3.2vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: black;
+      pointer-events: auto;
+      line-height: 1.4;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      bottom: 100%;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+
+.caption97 {top: 36%;right: 53%;width: 38%;}
+.caption98 {top: 38%;right: 5%;width: 30%;}
+.caption99 {top: 62%;right: 57%;width: 50%;}
+.caption100a {top: 89%;right: 30%;width: 36%;}
+.caption100b {top: 63%;right: 10%;width: 29%;}
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/page17.png" alt="Page 17 Comic">
+    <div class="text-layer">
+      
+<div class="caption caption97">
+  <span class="word">اليَوْم<span class="tooltip">Today</span></span> 
+  <span class="word">بَلَّش<span class="tooltip">began</span></span> 
+  <span class="word">مِتِل<span class="tooltip">like</span></span> 
+  <span class="word">أَيّ<span class="tooltip">any</span></span> 
+  <span class="word">يَوم...<span class="tooltip">day...</span></span> 
+  <span class="word">وَهُمّ<span class="tooltip">and they</span></span> 
+  <span class="word">مَا كَانُوا<span class="tooltip">didn't</span></span> 
+  <span class="word">يِعْرِفُوا<span class="tooltip">know</span></span> 
+  <span class="word">إِنُّه<span class="tooltip">that</span></span> 
+  <span class="word">فِيه<span class="tooltip">there was</span></span> 
+  <span class="word">وَاحَد<span class="tooltip">one</span></span> 
+  <span class="word">رَاح<span class="tooltip">was going to</span></span> 
+  <span class="word">يِغِيب<span class="tooltip">disappear</span></span> 
+</div>
+
+<div class="caption caption98">
+  <span class="word">إِسْتَنُّوا!<span class="tooltip">Wait!</span></span> 
+  <span class="word">واحد عم<span class="tooltip">He's</span></span> 
+  <span class="word">يِوْقَع!<span class="tooltip">falling!</span></span> 
+</div>
+
+<div class="caption caption99">
+  <span class="word">وَقَع...<span class="tooltip">He fell...</span></span> 
+  <span class="word">وَمَا<span class="tooltip">and did not</span></span> 
+  <span class="word">طَلِع<span class="tooltip">resurface</span></span> 
+  <span class="word">بَعْد<span class="tooltip">again</span></span> 
+</div>
+
+<div class="caption caption100a">
+  <span class="word">السُّكُوت<span class="tooltip">Silence</span></span> 
+  <span class="word">حَكَى<span class="tooltip">spoke</span></span> 
+  <span class="word">أَكْتَر<span class="tooltip">more</span></span> 
+  <span class="word">مِن<span class="tooltip">than</span></span> 
+  <span class="word">كِلّ<span class="tooltip">anything</span></span> 
+  <span class="word">شَيْ...<span class="tooltip">else...</span></span> 
+</div>
+
+<div class="caption caption100b">
+  <span class="word">وَأَهَاب<span class="tooltip">and Ahab</span></span> 
+  <span class="word">مَا<span class="tooltip">did not</span></span> 
+  <span class="word">طَلّ<span class="tooltip">look</span></span> 
+  <span class="word">عَلَيْهُن<span class="tooltip">at them</span></span> 
+  <span class="word">وَلا<span class="tooltip">even</span></span> 
+  <span class="word">مَرَّة<span class="tooltip">once</span></span> 
+</div>
+
+      
+    </div>
+  </div>
+</body>
+</html>

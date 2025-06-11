@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Page 19 - Verified Overlay with Tooltips</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .word:hover {
+      background-color: yellow;
+      color: black;
+    }
+    .image-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 3.2vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: black;
+      pointer-events: auto;
+      line-height: 1.4;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      bottom: 100%;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+    .caption106 {top: 8%;right: 43%;width: 30%;}
+.caption107a {top: 37%;right: 54%;width: 50%;}
+.caption107b {top: 62%;right: 60%;width: 50%;}
+.caption108a {top: 62%;right: 10%;width: 40%;}
+
+.caption108c {top: 91%;right: 57%;width: 40%;}
+.caption108b {top: 54%;right: 6%;width: 50%;}
+.caption109a {top: 90%;right: 3%;width: 21%;}
+.caption109b {top: 90%;right: 24%;width: 26%;}
+
+
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/page19.png" alt="Page 19 Comic">
+    <div class="text-layer">
+
+<div class="caption caption106">
+  <span class="word">يَوْم<span class="tooltip">Day</span></span> 
+  <span class="word">الأَوَّل<span class="tooltip">one</span></span> 
+</div>
+
+<div class="caption caption107a">
+  <span class="word">حُوت<span class="tooltip">whale</span></span>
+  <span class="word">أَبْيَض!<span class="tooltip">white!</span></span>  
+</div>
+
+<div class="caption caption107b">
+  <span class="word">عَلِالمِين!<span class="tooltip">To starboard!</span></span> 
+  <span class="word">كَبِير<span class="tooltip">Big</span></span> 
+  <span class="word">وَأَبْيَض!<span class="tooltip">and white!</span></span> 
+</div>
+
+<div class="caption caption108a">
+  <span class="word">أَهَاب<span class="tooltip">Ahab</span></span> 
+  <span class="word">قَفَز<span class="tooltip">jumped</span></span> 
+  <span class="word">عَلَى<span class="tooltip">onto</span></span> 
+  <span class="word">زَوْرَقُه,<span class="tooltip">his boat,</span></span> 
+</div>
+
+<div class="caption caption108c">  
+  <span class="word">وَكُلّ<span class="tooltip">and all</span></span> 
+  <span class="word">الطَّاقِم<span class="tooltip">the crew</span></span> 
+  <span class="word">بَرَّاق<span class="tooltip">shone</span></span> 
+  <span class="word">مِتِل<span class="tooltip">like</span></span> 
+  <span class="word">نَار<span class="tooltip">fire</span></span> 
+</div>
+
+<div class="caption caption108b">
+  <span class="word">جَهِّز<span class="tooltip">Prepare</span></span> 
+  <span class="word">الحَرْبون!<span class="tooltip">the harpoon!</span></span> 
+  <span class="word">إجا<span class="tooltip">The day</span></span> 
+  <span class="word">اليوم!<span class="tooltip">has come!</span></span> 
+</div>
+
+<div class="caption caption109a">
+  <span class="word">الحُوت<span class="tooltip">The whale</span></span> 
+  <span class="word">هَاجَم<span class="tooltip">attacked</span></span> 
+  <span class="word">بِقُوَّة...<span class="tooltip">with force...</span></span> 
+  </div>
+
+<div class="caption caption109b">
+  <span class="word">وَأَهَاب<span class="tooltip">and Ahab</span></span> 
+  <span class="word">طَار<span class="tooltip">was flung</span></span> 
+  <span class="word">فِي<span class="tooltip">into</span></span> 
+  <span class="word">الهَوَا<span class="tooltip">the air</span></span> 
+</div>
+
+      
+    </div>
+  </div>
+</body>
+</html>

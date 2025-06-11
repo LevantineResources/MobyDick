@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Page 11 - Verified Overlay with Tooltips</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .image-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 3.2vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: black;
+      pointer-events: auto;
+      line-height: 1.4;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      bottom: 100%;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+    .word:hover {
+      background-color: yellow;
+      color: black;
+    }
+    .caption61 {top: 32%;right: 53%;width: 28%;}
+    .caption62 {top: 32.5%;right: 5%;width: 31%;}
+    .caption63 {top: 64%;right: 53%;width: 22%;}
+    .caption64 {top: 66%;right: 5%;width: 38%;}
+    .caption65 {top: 91%;right: 55%;width: 40%;}
+    .caption66 {top: 91%;right: 15%;width: 36%;}
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/page11.png" alt="Page 11 Comic">
+    <div class="text-layer">
+      
+<div class="caption caption61">
+  <span class="word">بَدِّي<span class="tooltip">I want to</span></span>
+  <span class="word">أِفْرِغ<span class="tooltip">empty</span></span>
+  <span class="word">الرَّاس...<span class="tooltip">the head...</span></span>
+  <span class="word">فِيه<span class="tooltip">there is</span></span>
+  <span class="word">كِمْيَة<span class="tooltip">a quantity</span></span>
+  <span class="word">كْبِيرِة<span class="tooltip">large</span></span>
+  <span class="word">جُوَّاتُه!<span class="tooltip">inside it!</span></span>
+</div>
+
+<div class="caption caption62">
+  <span class="word">وَفَجْأَة...<span class="tooltip">Suddenly...</span></span>
+  <span class="word">تَشْتِيغُو<span class="tooltip">Tashtego</span></span>
+  <span class="word">وَقَع<span class="tooltip">fell</span></span>
+  <span class="word">جُوَّا<span class="tooltip">into</span></span>
+  <span class="word">رَاس<span class="tooltip">the head</span></span>
+  <span class="word">الحُوت!<span class="tooltip">of the whale!</span></span>
+</div>
+
+<div class="caption caption63">
+  <span class="word">الرَّاس<span class="tooltip">The head</span></span>
+  <span class="word">عَم<span class="tooltip">is</span></span>
+  <span class="word">يِنْفَصِل!<span class="tooltip">detaching!</span></span>
+  <span class="word">عَم<span class="tooltip">is</span></span>
+  <span class="word">يِغْرَق!<span class="tooltip">sinking!</span></span>
+</div>
+
+<div class="caption caption64">
+  <span class="word">كُويكُويغ<span class="tooltip">Queequeg</span></span>
+  <span class="word">نَطّ<span class="tooltip">jumped</span></span>
+  <span class="word">فِي<span class="tooltip">into</span></span>
+  <span class="word">المَيّ,<span class="tooltip">the water,</span></span>
+  <span class="word">وَمَعُه<span class="tooltip">with him</span></span>
+  <span class="word">سِكِّين!<span class="tooltip">a knife!</span></span>
+</div>
+
+<div class="caption caption65">
+  <span class="word">قَطَّع<span class="tooltip">He cut</span></span>
+  <span class="word">الحِيتِان<span class="tooltip">the whale</span></span>
+  <span class="word">وَفَتَح<span class="tooltip">and opened</span></span>
+  <span class="word">الرَّاس...<span class="tooltip">the head...</span></span>
+  <span class="word">وَسَحَب<span class="tooltip">and pulled</span></span>
+  <span class="word">تَشْتِيغُو<span class="tooltip">Tashtego</span></span>
+  <span class="word">مِن<span class="tooltip">from</span></span>
+  <span class="word">جُوَّاتُه<span class="tooltip">inside it</span></span>
+  <span class="word">قَبِل مَا<span class="tooltip">before</span></span>
+  <span class="word">يِغْرَق!<span class="tooltip">drowned!</span></span>
+</div>
+
+<div class="caption caption66">
+  <span class="word">رِحْلِة<span class="tooltip">A trip</span></span>
+  <span class="word">صَيْد<span class="tooltip">for hunting</span></span>
+  <span class="word">جْدِيدِة...<span class="tooltip">new...</span></span>
+  <span class="word">وِبِيب,<span class="tooltip">and Pip,</span></span>
+  <span class="word">الصَّبِي<span class="tooltip">the boy</span></span>
+  <span class="word">الصَّغِير,<span class="tooltip">the small one,</span></span>
+  <span class="word">رَاكِب<span class="tooltip">was riding</span></span>
+  <span class="word">مَعُن.<span class="tooltip">with them.</span></span>
+</div>
+
+      
+    </div>
+  </div>
+</body>
+</html>

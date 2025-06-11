@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Page 7 - Verified Overlay with Tooltips</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .image-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 3.2vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: black;
+      pointer-events: auto;
+      line-height: 1.4;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      bottom: 100%;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+    .word:hover {
+      background-color: yellow;
+      color: black;
+    }
+    .caption37 {top: 30%;right: 59%;width: 28%;}
+    .caption38 {top: 24.5%;right: 11%;width: 29%;}
+    .caption39a {top: 61%;right: 56%;width: 41%;}
+    .caption39b {top: 64%;right: 54%;width: 45%;}
+    .caption40 {top: 61%;right: 11%;width: 35%;}
+    .caption41 {top: 90%;right: 55%;width: 35%;}
+    .caption42 {top: 89%;right: 10%;width: 29%;}
+
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/page7.png" alt="Page 7 Comic">
+    <div class="text-layer">
+      
+      <div class="caption caption37">
+        <span class="word">وِفِدَلَّا؟<span class="tooltip">And Fedallah?</span></span> 
+        <span class="word">كَان<span class="tooltip">He was</span></span> 
+        <span class="word">دَايْمًا<span class="tooltip">always</span></span> 
+        <span class="word">حَدُّه<span class="tooltip">by his side</span></span> 
+        <span class="word">مِتِل<span class="tooltip">like </span></span> 
+        <span class="word">ظِلّ<span class="tooltip">a shadow</span></span> 
+        <span class="word">مَا<span class="tooltip">doesn't</span></span> 
+        <span class="word">بِيِفَارِقُه<span class="tooltip">leave him</span></span>
+      </div>
+
+      <div class="caption caption38">
+        <span class="word">الشَّمْس<span class="tooltip">the sun</span></span> 
+        <span class="word">رَح تِغْرُب<span class="tooltip">will set</span></span> 
+        <span class="word">فَوق<span class="tooltip">over</span></span>
+        <span class="word">مَيّ<span class="tooltip">water</span></span>
+        <span class="word">دَم<span class="tooltip">bloody</span></span>
+        <span class="word">وَالنِّهَايِة<span class="tooltip">and the end</span></span> 
+        <span class="word">قَرِيبَة<span class="tooltip">is near</span></span> 
+      </div>
+
+      <div class="caption caption39a">
+        <span class="word">بْتِثِق<span class="tooltip">Do you trust</span></span>
+        <span class="word">فِيهُن؟<span class="tooltip">in them?</span></span> 
+        <span class="word">الشَّي<span class="tooltip">something</span></span> 
+        <span class="word">فِيه<span class="tooltip">in it</span></span> 
+        <span class="word">غُمُوض<span class="tooltip">is unclear</span></span> 
+      </div>
+
+      <div class="caption caption39b">
+        <span class="word">الأَرْوَاح<span class="tooltip">the spirits</span></span> 
+        <span class="word">حَكِتْلِي<span class="tooltip">spoke to me</span></span> 
+        <span class="word">فِيه<span class="tooltip">there is</span></span> 
+        <span class="word">خَطَر<span class="tooltip">danger</span></span> 
+        <span class="word">جَاي<span class="tooltip">coming</span></span> 
+      </div>
+
+      <div class="caption caption40">
+        <span class="word">مَرَقْنَا<span class="tooltip">we passed</span></span> 
+        <span class="word">بِالمُحِيط<span class="tooltip">through seas</span></span> 
+        <span class="word">الهَادِئ<span class="tooltip">calm</span></span> 
+        <span class="word">بَسّ<span class="tooltip">but</span></span> 
+        <span class="word">نُفُوسْنَا<span class="tooltip">our souls</span></span> 
+        <span class="word">كَانِت مَضْطَرِبِة<span class="tooltip">were troubled</span></span> 
+      </div>
+
+      <div class="caption caption41">
+        <span class="word">حُوت!<span class="tooltip">Whale!</span></span> 
+        <span class="word">حُوت<span class="tooltip">Whale</span></span> 
+        <span class="word">عَلِالمِين!<span class="tooltip">to starboard!</span></span> 
+      </div>
+
+      <div class="caption caption42">
+        <span class="word">رَكضُوا<span class="tooltip">They ran</span></span> 
+        <span class="word">الطاقِم<span class="tooltip">the crew</span></span> 
+        <span class="word">لَعند<span class="tooltip">to the</span></span> 
+        <span class="word">طَرَف<span class="tooltip">edge</span></span> 
+        <span class="word">السَّفينة<span class="tooltip">of the ship</span></span> 
+        <span class="word">وَطَلّوا<span class="tooltip">and leaned</span></span> 
+        <span class="word">بالمَيّ<span class="tooltip">over the water</span></span> 
+      </div>
+
+
+
+      
+    </div>
+  </div>
+</body>
+</html>

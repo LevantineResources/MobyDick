@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Page 6 - Verified Overlay with Tooltips</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .image-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 3.2vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: black;
+      pointer-events: auto;
+      line-height: 1.4;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      bottom: 10%;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+    .word:hover {
+      background-color: yellow;
+      color: black;
+    }
+    .c31a {top: 4%;right: 58%;width: 68%;}
+    .c31b {top: 29%;right: 57%;width: 73%;}
+    .c32 {top: 27%;right: 7%;width: 34%;}
+    .c33 {top: 59%;right: 56%;width: 31%;}
+    .c34 {top: 59%;right: 6%;width: 38%;}
+    .c35 {top: 90%;right: 55%;width: 37%;}
+    .c36 {top: 89%;right: 8%;width: 38%;}
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/page6.png" alt="Page 6 Comic">
+    <div class="text-layer">
+      
+      <div class="caption c31a">
+        <span class="word">هَيْدَا<span class="tooltip">this is</span></span>
+        <span class="word">ذَهَب<span class="tooltip">gold</span></span>...
+        <span class="word">بَسّ<span class="tooltip">but</span></span>
+      </div>
+      <div class="caption c31b">
+        <span class="word">مُمْكِن<span class="tooltip">it might</span></span>
+        <span class="word">يِجِيب<span class="tooltip">bring</span></span>
+        <span class="word">لَعْنَة<span class="tooltip">a curse</span></span>.
+      </div>
+
+      <div class="caption c32">
+        <span class="word">وَفَجْأَة<span class="tooltip">and suddenly</span></span>...
+        <span class="word">طِلْعُوا<span class="tooltip">came out</span></span>
+        <span class="word">رِجَال<span class="tooltip">men</span></span>
+        <span class="word">مِن<span class="tooltip">from</span></span>
+        <span class="word">تَحْت<span class="tooltip">beneath</span></span>
+        <span class="word">السَّفِينِة<span class="tooltip">the ship</span></span>،
+        <span class="word">مَا حَدَا<span class="tooltip">no one</span></span>
+        <span class="word">شَافْهُم<span class="tooltip">saw them</span></span>
+        <span class="word">قَبِل<span class="tooltip">before</span></span>.
+      </div>
+
+      <div class="caption c33">
+        <span class="word">زَعِيمْهُم<span class="tooltip">their leader</span></span>
+        <span class="word">كَان<span class="tooltip">was</span></span>
+        <span class="word">اِسْمُه<span class="tooltip">named</span></span>
+        <span class="word">فِدَلَّا<span class="tooltip">Fedallah</span></span>...
+        <span class="word">شَكْلُه<span class="tooltip">his appearance</span></span>
+        <span class="word">غَرِيب<span class="tooltip">was strange</span></span>
+        <span class="word">وَعْيُونُه<span class="tooltip">and his eyes</span></span>
+        <span class="word">مِتِل<span class="tooltip">like</span></span>
+        <span class="word">النَّار<span class="tooltip">fire</span></span>.
+      </div>
+
+      <div class="caption c34">
+        <span class="word">هُول<span class="tooltip">these are</span></span>
+        <span class="word">جَمَاعْتِي<span class="tooltip">my men</span></span>...
+        <span class="word">وَهِنِّي<span class="tooltip">and they</span></span>
+        <span class="word">رَح<span class="tooltip">will</span></span>
+        <span class="word">يِسَاعْدُونِي<span class="tooltip">help me</span></span>
+        <span class="word">أَصْطَاد<span class="tooltip">hunt</span></span>
+        <span class="word">الحُوت<span class="tooltip">the whale</span></span>
+        <span class="word">الأَبْيَض<span class="tooltip">the white one</span></span>.
+      </div>
+
+      <div class="caption c35">
+        <span class="word">كِلّ<span class="tooltip">every</span></span>
+        <span class="word">يَوم<span class="tooltip">day</span></span>،
+        <span class="word">أَهَاب<span class="tooltip">Ahab</span></span>
+        <span class="word">كَان<span class="tooltip">would</span></span>
+        <span class="word">يِطْلَع<span class="tooltip">go up</span></span>
+        <span class="word">عَلِالسَّرِيَة<span class="tooltip">to the mast</span></span>،
+        <span class="word">وَيِطَلِّع<span class="tooltip">and look out</span></span>
+        <span class="word">عَلِالأُفُق<span class="tooltip">at the horizon</span></span>.
+      </div>
+
+      <div class="caption c36">
+        <span class="word">أَهَاب<span class="tooltip">Ahab</span></span>
+        <span class="word">مَا<span class="tooltip">doesn't</span></span>
+        <span class="word">بِيأَكُل<span class="tooltip">eat</span></span>
+        <span class="word">مَعْنَا<span class="tooltip">with us</span></span>،
+        <span class="word">وَمَا<span class="tooltip">and he doesn't</span></span>
+        <span class="word">بِيِحكِي<span class="tooltip">talk</span></span>
+        <span class="word">كْتِير<span class="tooltip">much</span></span>...
+        <span class="word">كَأَنّه<span class="tooltip">as if he</span></span>
+        <span class="word">عَايِش<span class="tooltip">lives</span></span>
+        <span class="word">بِعَالَم<span class="tooltip">in a world</span></span>
+        <span class="word">تَانِي<span class="tooltip">other/different</span></span>.
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

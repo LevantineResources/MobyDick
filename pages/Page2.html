@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Page 2 - Verified Overlay with Tooltips</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .image-wrapper {
+      position: relative;
+      height: 100%;
+      max-height: 1536px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      height: 100%;
+      width: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 3.2vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: black;
+      pointer-events: auto;
+      line-height: 1.4;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      bottom: 100%;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+    .word:hover {
+      background-color: yellow;
+      color: black;
+    }
+    .c7 {top: 27%;right: 59%;width: 30%;}
+    .c8 {top: 26%;right: 10%;width: 33%;}
+    .c9 {top: 39%;right: 55%;width: 13%;}
+    .c10 {top: 59%;right: 9%;width: 32%;}
+    .c11 {top: 69%;right: 56%;width: 19%;}
+    .c112 {top: 70%;right: 75%;width: 20%;}
+    .c113 {top: 91%;right: 55%;width: 32%;}
+    .c12 {top: 70%;right: 5%;width: 20%;}
+    .c122 {top: 70%;right: 25%;width: 20%;}
+    .c13 {top: 61%;right: 65%;width: 20%;}
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/page2.png" alt="Page 2 Comic">
+    <div class="text-layer">
+      <div class="caption c7">
+        <span class="word">الزَبُون<span class="tooltip">the guest</span></span>
+        <span class="word">التَانِي<span class="tooltip">other</span></span>...
+        <span class="word">كَان<span class="tooltip">he was</span></span>
+        <span class="word">غَرِيب<span class="tooltip">strange</span></span>
+        <span class="word">الشَّكِل<span class="tooltip">in appearance</span></span>...
+        <span class="word">مْغَطَّى<span class="tooltip">covered</span></span>
+        <span class="word">بِالوُشُوم<span class="tooltip">with tattoos</span></span>.
+      </div>
+
+      <div class="caption c8">
+        <span class="word">كُنت<span class="tooltip">I was</span></span>
+        <span class="word">خَايِف<span class="tooltip">afraid</span></span>
+        <span class="word">بِالبِدَايِة<span class="tooltip">at first</span></span>...
+        <span class="word">بَسّ<span class="tooltip">but</span></span>
+        <span class="word">هُو<span class="tooltip">he</span></span>
+        <span class="word">مَا<span class="tooltip">did not</span></span>
+        <span class="word">أَذَانِي<span class="tooltip">harm me</span></span>
+        <span class="word">بِشِي<span class="tooltip">at all</span></span>.
+      </div>
+
+      <div class="caption c9">
+        <span class="word">هَدِيِّة<span class="tooltip">a gift</span></span>
+        <span class="word">إِلَك<span class="tooltip">for you</span></span>.
+        <span class="word">مِن<span class="tooltip">from</span></span>
+        <span class="word">تَقَالِيدِي<span class="tooltip">my traditions</span></span>.
+      </div>
+
+      <div class="caption c10">
+        <span class="word">طِلِع<span class="tooltip">turned out to be</span></span>
+        <span class="word">شَخْص<span class="tooltip">a person</span></span>
+        <span class="word">كَرِيم<span class="tooltip">generous</span></span>،
+        <span class="word">وَطَيِّب<span class="tooltip">and kind</span></span>
+        <span class="word">القَلْب<span class="tooltip">hearted</span></span>.
+        <span class="word">صِرْنَا<span class="tooltip">we became</span></span>
+        <span class="word">أَصْحَاب<span class="tooltip">friends</span></span>.
+      </div>
+
+      <div class="caption c11">
+        <span class="word">شُو<span class="tooltip">what</span></span>
+        <span class="word">جَابَك<span class="tooltip">brought you</span></span>
+        <span class="word">عَلَى<span class="tooltip">to</span></span>
+        <span class="word">نْيُو بِيدْفُورْد<span class="tooltip">New Bedford</span></span>؟
+      </div>
+      <div class="caption c112">
+        <span class="word">عَم<span class="tooltip">I'm</span></span>
+        <span class="word">دَوِّر<span class="tooltip">looking</span></span>
+        <span class="word">عَشُغْل<span class="tooltip">for work</span></span>
+        <span class="word">بِالبَحِر<span class="tooltip">at sea</span></span>.
+      </div>
+      <div class="caption c113">
+        <span class="word">أَنَا<span class="tooltip">me</span></span>
+        <span class="word">كَمَان<span class="tooltip">too</span></span>.
+        <span class="word">تَعَا<span class="tooltip">come</span></span>
+        <span class="word">مَعِي<span class="tooltip">with me</span></span>
+        <span class="word">بُكْرَا<span class="tooltip">tomorrow</span></span>
+        <span class="word">عَلْمَرَاكِب<span class="tooltip">to the ships</span></span>
+        <span class="word">وَنْشُوف<span class="tooltip">and we’ll see</span></span>.
+      </div>
+
+      <div class="caption c12">
+        <span class="word">هَالمَدِينَة<span class="tooltip">this town</span></span>
+        <span class="word">مَعْرُوفِة<span class="tooltip">is known</span></span>
+        <span class="word">بِصَيْد الحِيتَان<span class="tooltip">for whale hunting</span></span>.
+      </div>
+      <div class="caption c122">
+        <span class="word">مُمْتاز<span class="tooltip">excellent</span></span>!
+        <span class="word">بِدْنَا<span class="tooltip">we need to</span></span>
+        <span class="word">نْلَاقِي<span class="tooltip">find</span></span>
+        <span class="word">مَرْكَب<span class="tooltip">a ship</span></span>
+        <span class="word">قَوِي<span class="tooltip">strong</span></span>!
+      </div>
+      <div class="caption c13">
+        <span class="word">اِسْمه<span class="tooltip">His name</span></span>
+        <span class="word">كويكويغ<span class="tooltip">Queequeg</span></span>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>

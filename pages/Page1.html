@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Page 1 - Verified Overlay with Tooltips</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .image-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 3.2vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: black;
+      pointer-events: auto;
+      line-height: 1.4;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      bottom: -4%;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+    .word:hover {
+      background-color: yellow;
+      color: black;
+    }
+    .caption1 {top: 2.9%;right: 52.7%;width: 39%;}
+    .caption2 { top: 5.2%; right: 6%; width: 29%; }
+    .caption3 {top: 59.6%;right: 51.7%;width: 39%;}
+    .caption4 {top: 38.4%;right: 5.8%;width: 36%;}
+    .caption5a {top: 91.8%;right: 54.7%;width: 23.4%;}
+    .caption5b {top: 69.8%;right: 63.7%;width: 23.4%;}
+    .caption6 {top: 71.3%;right: 31.5%;width: 10.4%;}
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/page1.png" alt="Page 1 Comic">
+    <div class="text-layer">
+      <div class="caption caption1">
+        <span class="word">وَقْت<span class="tooltip">when</span></span>
+        <span class="word">بِبَلِّش<span class="tooltip">I start</span></span>
+        <span class="word">إِكْتِئِب<span class="tooltip">feel down</span></span>
+        <span class="word">أَو<span class="tooltip">or</span></span>
+        <span class="word">بَحِسّ<span class="tooltip">I feel</span></span>
+        <span class="word">الحَيَاة<span class="tooltip">life</span></span>
+        <span class="word">صَارَت<span class="tooltip">became</span></span>
+        <span class="word">ضَيِّقَة<span class="tooltip">tight</span></span>،
+        <span class="word">بَرْجَع<span class="tooltip">I return</span></span>
+        <span class="word">عَالبَحِر<span class="tooltip">to the sea</span></span>.
+      </div>
+      <div class="caption caption2">
+        <span class="word">المَوْج<span class="tooltip">the waves</span></span>
+        <span class="word">بِيَعْطِينِي<span class="tooltip">give me</span></span>
+        <span class="word">رَاحَة<span class="tooltip">peace</span></span>...
+        <span class="word">مِتِل إِنُّه<span class="tooltip">as if</span></span>
+        <span class="word">فِي شِي<span class="tooltip">there's something</span></span>
+        <span class="word">أَكْبَر<span class="tooltip">bigger</span></span>
+        <span class="word">مِن<span class="tooltip">than</span></span>
+        <span class="word">هُمُومِي<span class="tooltip">my worries</span></span>.
+      </div>
+      <div class="caption caption3">
+        <span class="word">رُحْت<span class="tooltip">I went</span></span>
+        <span class="word">رِحْلَات<span class="tooltip">voyages</span></span>
+        <span class="word">بَحْرِيَّة<span class="tooltip">sea-based</span></span>
+        <span class="word">مِن قَبِل<span class="tooltip">before</span></span>،
+        <span class="word">بَسّ<span class="tooltip">but</span></span>
+        <span class="word">وَلَا مَرَّة<span class="tooltip">never</span></span>
+        <span class="word">كُنت<span class="tooltip">I was</span></span>
+        <span class="word">مَع<span class="tooltip">with</span></span>
+        <span class="word">صَيَّادِين حِيتَان<span class="tooltip">whalers</span></span>.
+      </div>
+      <div class="caption caption4">
+        <span class="word">وَصَلِت<span class="tooltip">I arrived</span></span>
+        <span class="word">عَلَى<span class="tooltip">at</span></span>
+        <span class="word">نْيُو بِيدْفُورْد<span class="tooltip">New Bedford</span></span>،
+        <span class="word">مَدِينَة<span class="tooltip">a city</span></span>
+        <span class="word">صَيْد الحِيتَان<span class="tooltip">of whale hunting</span></span>.
+      </div>
+      <div class="caption caption5a">
+        <span class="word">كِلّ الغُرَف<span class="tooltip">all the rooms</span></span>
+        <span class="word">مَحْجُوزَة<span class="tooltip">are booked</span></span>.
+      </div>
+      <div class="caption caption5b">
+        <span class="word">فِيك<span class="tooltip">you can</span></span>
+        <span class="word">تِشَارِك<span class="tooltip">share</span></span>
+        <span class="word">السَّرِير<span class="tooltip">the bed</span></span>
+        <span class="word">مَع<span class="tooltip">with</span></span>.
+        <span class="word">زَبُون<span class="tooltip">guest</span></span>.
+        <span class="word">تَانِي<span class="tooltip">another</span></span>.
+      </div>
+      <div class="caption caption6">
+        <span class="word">مَع مِين<span class="tooltip">with whom</span></span>
+        <span class="word">رَح نَام؟<span class="tooltip">will I sleep?</span></span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

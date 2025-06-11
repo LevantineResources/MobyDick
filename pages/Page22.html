@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Page 22 - Verified Overlay with Tooltips</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .word:hover {
+      background-color: yellow;
+      color: black;
+    }
+    .image-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 3.2vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: black;
+      pointer-events: auto;
+      line-height: 1.4;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      bottom: 100%;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+
+.caption121 {top: 25.5%;right: 57%;width: 36%;}
+.caption122 {top: 27%;right: 4%;width: 45%;}
+.caption123 {top: 59.5%;right: 57%;width: 36%;}
+.caption124 {top: 61%;right: 4%;width: 44%;}
+.caption125 {top: 91%;right: 17%;width: 70%;}
+
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/page22.png" alt="Page 22 Comic">
+    <div class="text-layer">
+      
+<div class="caption caption121">
+  <span class="word">وِجْهُه<span class="tooltip">His face</span></span> 
+  <span class="word">كَان<span class="tooltip">was</span></span> 
+  <span class="word">آخِر<span class="tooltip">the last</span></span> 
+  <span class="word">شِي<span class="tooltip">thing</span></span> 
+  <span class="word">نْشُوفُه...<span class="tooltip">we saw...</span></span> 
+  <span class="word">وَبَعْدِه<span class="tooltip">and after it</span></span> 
+  <span class="word">الهُدُوء.<span class="tooltip">silence.</span></span> 
+</div>
+
+<div class="caption caption122">
+  <span class="word">كِلّ<span class="tooltip">Everything</span></span> 
+  <span class="word">شَيْ<span class="tooltip">thing</span></span> 
+  <span class="word">فِي<span class="tooltip">in</span></span> 
+  <span class="word">المَيّ...<span class="tooltip">the water...</span></span> 
+  <span class="word">خَشَب,<span class="tooltip">wood,</span></span> 
+  <span class="word">دَم,<span class="tooltip">blood,</span></span> 
+  <span class="word">صَرَاخ.<span class="tooltip">screams.</span></span> 
+</div>
+
+<div class="caption caption123">
+  <span class="word">سْتَارْبَك<span class="tooltip">Starbuck</span></span> 
+  <span class="word">كَان<span class="tooltip">was</span></span> 
+  <span class="word">اللِّي<span class="tooltip">the one</span></span> 
+  <span class="word">بَقِي<span class="tooltip">who remained</span></span> 
+  <span class="word">يُفَكِّر...<span class="tooltip">thinking...</span></span> 
+  <span class="word">وِجِه<span class="tooltip">the direction of</span></span> 
+  <span class="word">السَّفِينِة<span class="tooltip">the ship</span></span> 
+  <span class="word">عَلَى<span class="tooltip">on</span></span> 
+  <span class="word">الخَطّ.<span class="tooltip">course.</span></span> 
+</div>
+
+<div class="caption caption124">
+  <span class="word">أَهَاب<span class="tooltip">Ahab</span></span> 
+  <span class="word">بَعْدُه<span class="tooltip">was still</span></span> 
+  <span class="word">عَايِش...<span class="tooltip">living...</span></span> 
+  <span class="word">وْرَاجِع<span class="tooltip">and returning</span></span> 
+  <span class="word">لِمُقَاتَلِة<span class="tooltip">to fight</span></span> 
+  <span class="word">الشَّرّ.<span class="tooltip">evil.</span></span> 
+</div>
+
+<div class="caption caption125">
+  <span class="word">وِاليَوم<span class="tooltip">And the day</span></span> 
+  <span class="word">التَّانِي<span class="tooltip">second</span></span> 
+  <span class="word">نْهَى<span class="tooltip">ended</span></span> 
+  <span class="word">بِلُون<span class="tooltip">in a color</span></span> 
+  <span class="word">أَحْمَر...<span class="tooltip">red...</span></span> 
+  <span class="word">وَوَعْد<span class="tooltip">with a promise</span></span> 
+  <span class="word">بِنِهَايِة<span class="tooltip">of an end</span></span> 
+  <span class="word">قَرِيبَة.<span class="tooltip">near.</span></span> 
+</div>
+
+      
+    </div>
+  </div>
+</body>
+</html>

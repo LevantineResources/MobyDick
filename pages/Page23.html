@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Page 23 - Verified Overlay with Tooltips</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .word:hover {
+      background-color: yellow;
+      color: black;
+    }
+    .image-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 3.2vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: black;
+      pointer-events: auto;
+      line-height: 1.4;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      bottom: 100%;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+
+.caption126 {top: 6%;right: 43%;width: 30%;}
+.caption127 {top: 52%;right: 57%;width: 28%;}
+.caption128 {top: 51%;right: 9%;width: 30%;}
+.caption129 {top: 86%;right: 56%;width: 40%;}
+.caption130 {top: 86%;right: 8%;width: 31%;}
+
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/page23.png" alt="Page 23 Comic">
+    <div class="text-layer">
+
+<div class="caption caption126">
+  <span class="word">آخِر<span class="tooltip">Last</span></span> 
+  <span class="word">يَوم<span class="tooltip">day</span></span> 
+</div>
+
+<div class="caption caption127">
+  <span class="word">اليَوْم<span class="tooltip">The day</span></span> 
+  <span class="word">التَّالِت...<span class="tooltip">third...</span></span> 
+  <span class="word">الكِلّ<span class="tooltip">everyone</span></span> 
+  <span class="word">سَاكِت،<span class="tooltip">was silent,</span></span> 
+  <span class="word">وَالعُيُون<span class="tooltip">and eyes</span></span> 
+  <span class="word">عَالبَحِر.<span class="tooltip">on the sea.</span></span> 
+</div>
+
+<div class="caption caption128">
+  <span class="word">الحُوت<span class="tooltip">The whale</span></span> 
+  <span class="word">طَلَع...<span class="tooltip">rose...</span></span> 
+  <span class="word">أَبْيَض<span class="tooltip">white</span></span> 
+  <span class="word">وَضَخْم,<span class="tooltip">and huge,</span></span> 
+  <span class="word">مِتِل<span class="tooltip">like</span></span> 
+  <span class="word">جَبَل<span class="tooltip">a mountain</span></span> 
+  <span class="word">بِيِتْنَفَّس.<span class="tooltip">breathing.</span></span> 
+</div>
+
+<div class="caption caption129">
+  <span class="word">جُثِّة<span class="tooltip">The body</span></span> 
+  <span class="word">فِدَلَّا<span class="tooltip">of Fedallah</span></span> 
+  <span class="word">كَانِت<span class="tooltip">was</span></span> 
+  <span class="word">مَرْبُوطَة<span class="tooltip">tied</span></span> 
+  <span class="word">عَلَى<span class="tooltip">to</span></span> 
+  <span class="word">جَنْب<span class="tooltip">the side of</span></span> 
+  <span class="word">الحُوت...<span class="tooltip">the whale...</span></span> 
+  <span class="word">بِنْهَايِة<span class="tooltip">at the end of</span></span> 
+  <span class="word">حَبْل<span class="tooltip">a rope</span></span> 
+  <span class="word">القَدَر.<span class="tooltip">of fate.</span></span> 
+</div>
+
+<div class="caption caption130">
+  <span class="word">الحُوت<span class="tooltip">The whale</span></span> 
+  <span class="word">ضَرَب<span class="tooltip">hit</span></span> 
+  <span class="word">السَّفِينِة...<span class="tooltip">the ship...</span></span> 
+  <span class="word">وَكِلّ شَيْ<span class="tooltip">and everything</span></span> 
+  <span class="word">تَفَجَّر.<span class="tooltip">exploded.</span></span> 
+</div>
+
+      
+    </div>
+  </div>
+</body>
+</html>

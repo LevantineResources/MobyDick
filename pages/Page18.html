@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Page 18 - Verified Overlay with Tooltips</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .word:hover {
+      background-color: yellow;
+      color: black;
+    }
+    .image-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 3.2vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: black;
+      pointer-events: auto;
+      line-height: 1.4;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      bottom: 100%;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+
+.caption101 {top: 27.5%;right: 50%;width: 47%;}
+.caption102 {top: 28.4%;right: 4%;width: 38%;}
+.caption103a {top: 61%;right: 55%;width: 70%;}
+.caption103b {top: 58%;right: 7%;width: 70%;}
+.caption103c {top: 61.3%;right: 6%;width: 27%;}
+.caption104 {top: 90%;right: 55%;width: 25%;}
+.caption105 {top: 90%;right: 5%;width: 42%;}
+
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/page18.png" alt="Page 18 Comic">
+    <div class="text-layer">
+      
+<div class="caption caption101">
+  <span class="word">صَار<span class="tooltip">Became</span></span>
+  <span class="word">بِيب<span class="tooltip">Pip</span></span>
+  <span class="word">يِمْشِي<span class="tooltip">walking</span></span>
+  <span class="word">وَرَا<span class="tooltip">behind</span></span>
+  <span class="word">أَهَاب<span class="tooltip">Ahab</span></span>
+  <span class="word">زَيّ<span class="tooltip">like</span></span>
+  <span class="word">ظِلّ,<span class="tooltip">a shadow,</span></span>
+  <span class="word">يِحْكِي<span class="tooltip">speaking</span></span>
+  <span class="word">كْلِمَات<span class="tooltip">words</span></span>
+  <span class="word">مَا<span class="tooltip">that had no</span></span>
+  <span class="word">إِلْهَا<span class="tooltip">to them</span></span>
+  <span class="word">مَعْنَى...<span class="tooltip">meaning...</span></span>
+  <span class="word">أَو<span class="tooltip">or</span></span>
+  <span class="word">يُمْكِن<span class="tooltip">maybe</span></span>
+  <span class="word">إِلْهَا<span class="tooltip">they had</span></span>
+  <span class="word">كْتِير<span class="tooltip">many</span></span>
+</div>
+
+<div class="caption caption102">
+  <span class="word">وَصَلْنَا<span class="tooltip">We reached</span></span>
+  <span class="word">خَطّ<span class="tooltip">the line of</span></span>
+  <span class="word">الاسْتِوَاء...<span class="tooltip">the equator...</span></span>
+  <span class="word">هُنَاك<span class="tooltip">there</span></span>
+  <span class="word">أَهَاب<span class="tooltip">Ahab</span></span>
+  <span class="word">كَان<span class="tooltip">was</span></span>
+  <span class="word">مُتَأَكِّد<span class="tooltip">certain</span></span>
+  <span class="word">إِنُّه<span class="tooltip">that</span></span>
+  <span class="word">الحُوت<span class="tooltip">the whale</span></span>
+  <span class="word">نَاطِر<span class="tooltip">was waiting</span></span>
+</div>
+
+<div class="caption caption103a">
+  <span class="word">هَيْ!<span class="tooltip">Hey!</span></span>
+  <span class="word">هَيْ<span class="tooltip">Hey</span></span>
+  <span class="word">السَّفِينَة<span class="tooltip">this ship</span></span>
+  <span class="word">اِسْمها<span class="tooltip">its name is</span></span>
+  <span class="word">الرَّاشِل!<span class="tooltip">Rachel!</span></span>
+</div>
+
+<div class="caption caption103b">
+  <span class="word">ضَيَّعْنَا<span class="tooltip">We lost</span></span>
+</div>
+
+<div class="caption caption103c">
+  <span class="word">وَلَدِي<span class="tooltip">my son</span></span>
+  <span class="word">بَعِد<span class="tooltip">after</span></span>
+  <span class="word">مَا<span class="tooltip">we</span></span>
+  <span class="word">طَارَدْنَا<span class="tooltip">chased</span></span>
+  <span class="word">الحُوت...<span class="tooltip">the whale...</span></span>
+  <span class="word">سَاعِدْنَا<span class="tooltip">help us</span></span>
+  <span class="word">نْلَاقِيه<span class="tooltip">find him</span></span>
+</div>
+
+<div class="caption caption104">
+  <span class="word">مَا فِينِي.<span class="tooltip">I can't.</span></span>
+  <span class="word">أَنَا<span class="tooltip">I</span></span>
+  <span class="word">عِنْدِي<span class="tooltip">have</span></span>
+  <span class="word">وَاحِد<span class="tooltip">someone</span></span>
+  <span class="word">بَدِّي<span class="tooltip">I must</span></span>
+  <span class="word">أَلْحَقُه<span class="tooltip">follow</span></span>
+</div>
+
+<div class="caption caption105">
+  <span class="word">وَفُوق<span class="tooltip">And over</span></span>
+  <span class="word">مَيّ<span class="tooltip">the waters</span></span>
+  <span class="word">المَحِيط,<span class="tooltip">of the ocean,</span></span>
+  <span class="word">شَفْنَا<span class="tooltip">we saw</span></span>
+  <span class="word">أَجْسَام<span class="tooltip">bodies</span></span>
+  <span class="word">مَفْقُودِين...<span class="tooltip">of the missing...</span></span>
+  <span class="word">الحُوت<span class="tooltip">the whale</span></span>
+  <span class="word">كَان<span class="tooltip">was</span></span>
+  <span class="word">فِيه<span class="tooltip">involved</span></span>
+</div>
+
+      
+    </div>
+  </div>
+</body>
+</html>

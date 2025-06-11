@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Page 15 - Verified Overlay with Tooltips</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .word:hover {
+      background-color: yellow;
+      color: black;
+    }
+    .image-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 3.2vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: black;
+      pointer-events: auto;
+      line-height: 1.4;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      bottom: 100%;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+    .caption85 {top: 26%;right: 57%;width: 42%;}
+.caption86 {top: 28.5%;right: 4%;width: 43%;}
+.caption87 {top: 57%;right: 57%;width: 31%;}
+.caption88 {top: 57%;right: 4%;width: 38%;}
+.caption89 {top: 89%;right: 60%;width: 30%;}
+.caption90 {top: 88%;right: 9%;width: 31%;}
+
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/page15.png" alt="Page 15 Comic">
+    <div class="text-layer">
+      
+<div class="caption caption85">
+  <span class="word">بَعْد مَا<span class="tooltip">After</span></span> 
+  <span class="word">تْصَنَع<span class="tooltip">it was forged</span></span> 
+  <span class="word">غَمَّس<span class="tooltip">He dipped</span></span> 
+  <span class="word">أَهَاب<span class="tooltip">Ahab</span></span> 
+  <span class="word">رَأْس<span class="tooltip">the tip</span></span> 
+  <span class="word">الحَرْبُون<span class="tooltip">of the harpoon</span></span> 
+  <span class="word">بِدَم<span class="tooltip">in the blood</span></span> 
+  <span class="word">الحَرَّاقِين<span class="tooltip">of the harpooners</span></span> 
+</div>
+
+<div class="caption caption86">
+  <span class="word">بِهَاد<span class="tooltip">With this</span></span> 
+  <span class="word">الحَرْبُون...<span class="tooltip">harpoon...</span></span> 
+  <span class="word">رَح<span class="tooltip">I will</span></span> 
+  <span class="word">أَضْرُب<span class="tooltip">strike</span></span> 
+  <span class="word">الشَّرّ<span class="tooltip">evil</span></span> 
+  <span class="word">بِنَفْسُه!<span class="tooltip">itself!</span></span> 
+</div>
+
+<div class="caption caption87">
+  <span class="word">صَدْنَا<span class="tooltip">We hunted</span></span> 
+  <span class="word">كَم<span class="tooltip">several</span></span> 
+  <span class="word">حُوت...<span class="tooltip">whales...</span></span> 
+  <span class="word">الدَّهَب<span class="tooltip">the gold</span></span> 
+  <span class="word">الأَبْيَض<span class="tooltip">white</span></span> 
+  <span class="word">كَان<span class="tooltip">would</span></span> 
+  <span class="word">يِجِي<span class="tooltip">come</span></span> 
+  <span class="word">وَيْرُوح<span class="tooltip">and go</span></span> 
+</div>
+
+<div class="caption caption88">
+  <span class="word">رَح<span class="tooltip">You will</span></span> 
+  <span class="word">تِشُوف<span class="tooltip">see</span></span> 
+  <span class="word">نَعْشَين<span class="tooltip">two coffins</span></span> 
+  <span class="word">يَا<span class="tooltip">O</span></span> 
+  <span class="word">كَابْتِن...<span class="tooltip">captain...</span></span> 
+  <span class="word">وَالثَّانِي<span class="tooltip">and the second</span></span> 
+  <span class="word">مَصْنُوع<span class="tooltip">made</span></span> 
+  <span class="word">مِن<span class="tooltip">of</span></span> 
+  <span class="word">خَشَب<span class="tooltip">wood</span></span> 
+  <span class="word">أَمِيرْكِي<span class="tooltip">American</span></span> 
+</div>
+
+<div class="caption caption89">
+  <span class="word">وَرَح<span class="tooltip">And you will</span></span> 
+  <span class="word">تِمُوت<span class="tooltip">die</span></span> 
+  <span class="word">بِحَبْل...<span class="tooltip">by a rope...</span></span> 
+  <span class="word">حَبْل<span class="tooltip">a rope</span></span> 
+  <span class="word">كَتَاف,<span class="tooltip">of the shoulder,</span></span> 
+  <span class="word">مِش<span class="tooltip">not</span></span> 
+  <span class="word">حَرْبُون<span class="tooltip">a harpoon</span></span> 
+</div>
+
+<div class="caption caption90">
+  <span class="word">وَيْن<span class="tooltip">Where are</span></span> 
+  <span class="word">النُّعُوش<span class="tooltip">the coffins</span></span> 
+  <span class="word">فِي<span class="tooltip">in</span></span> 
+  <span class="word">البَحِر؟<span class="tooltip">the sea?</span></span> 
+  <span class="word">وَمِين<span class="tooltip">And who</span></span> 
+  <span class="word">بِيِنْشَن<span class="tooltip">gets hanged</span></span> 
+  <span class="word">فِي<span class="tooltip">on</span></span> 
+  <span class="word">السَّفِينِة؟<span class="tooltip">the ship?</span></span> 
+  <span class="word">هَاد<span class="tooltip">That</span></span> 
+  <span class="word">مَعْنَاه...<span class="tooltip">means...</span></span> 
+  <span class="word">أَنَا<span class="tooltip">I am</span></span> 
+  <span class="word">خَالِد!<span class="tooltip">immortal!</span></span> 
+</div>
+
+      
+    </div>
+  </div>
+</body>
+</html>

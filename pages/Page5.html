@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Page 5 - Verified Overlay with Tooltips</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .image-wrapper {
+      position: relative;
+      height: 100%;
+      max-height: 1536px;
+      width:auto;
+      margin: 0;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      height: 100%;
+      width: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 3.2vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: black;
+      pointer-events: auto;
+      line-height: 1.4;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      bottom: 10%;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+    .word:hover {
+      background-color: yellow;
+      color: black;
+    }
+    .c25a  {top: 4%;right: 68%;width: 20%;}
+    .c26a  {top: 3%;right: 14%;width: 20%;}
+    .c25b  {top: 39%;right: 54%;width: 20%;}
+    .c26b  {top: 30%;right: 11%;width: 29%;}
+    .c27  {top: 61%;right: 58%;width: 47%;}
+    .c28  {top: 61%;right: 5%;width: 40%;}
+    .c29a  {top: 92%;right: 55%;width: 42%;}
+    .c29b  {top: 71%;right: 77%;width: 20%;}
+    .c30a  {top: 68%;right: 11%;width: 20%;}
+    .c30b  {top: 92%;right: 11%;width: 20%;}
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/page5.png" alt="Page 5 Comic">
+    <div class="text-layer">
+      <div class="text-layer">
+      <div class="caption c25a">
+        <span class="word">هَيْدَا<span class="tooltip">is that</span></span>
+        <span class="word">هُو<span class="tooltip">him</span></span>؟
+      </div>
+
+      <div class="caption c25b">
+        <span class="word">الكَابْتِن<span class="tooltip">the captain</span></span>
+        <span class="word">المَجْنُون<span class="tooltip">the mad one</span></span>؟
+      </div>
+
+      <div class="caption c26a">
+        <span class="word">فِي<span class="tooltip">there is</span></span>
+        <span class="word">حُوت<span class="tooltip">a whale</span></span>
+        <span class="word">أَبْيَض<span class="tooltip">white</span></span>!
+        
+      </div>
+      <div class="caption c26b">
+        <span class="word">اِسْمُه<span class="tooltip">his name is</span></span>
+        <span class="word">مُوبِي دِك<span class="tooltip">Moby Dick</span></span>!
+        <span class="word">سَرَق<span class="tooltip">he took</span></span>
+        <span class="word">رِجْلِي<span class="tooltip">my leg</span></span>.
+        <span class="word">وَلَازِم<span class="tooltip">and he must</span></span>
+        <span class="word">يِمُوت<span class="tooltip">die</span></span>!
+      </div>
+
+      <div class="caption c27">
+        <span class="word">هَالحُوت<span class="tooltip">this whale</span></span>
+        <span class="word">هُو<span class="tooltip">he's</span></span>
+        <span class="word">الشَّرّ<span class="tooltip">evil</span></span>
+        <span class="word">بِذَاتُه<span class="tooltip">itself</span></span>!
+      </div>
+
+      <div class="caption c28">
+        <span class="word">مِش<span class="tooltip">not</span></span>
+        <span class="word">طَبِيعِي<span class="tooltip">normal</span></span>...
+        <span class="word">فِي<span class="tooltip">there is</span></span>
+        <span class="word">شِي<span class="tooltip">something</span></span>
+        <span class="word">غَلَط<span class="tooltip">wrong</span></span>
+        <span class="word">بِهَالرَّجُل<span class="tooltip">with this man</span></span>.
+      </div>
+
+      <div class="caption c29a">
+        <span class="word">أَهَاب<span class="tooltip">Ahab</span></span>
+        <span class="word">دَقّ<span class="tooltip">nailed</span></span>
+        <span class="word">عُمْلِة<span class="tooltip">a coin</span></span>
+        <span class="word">ذَهَب<span class="tooltip">of gold</span></span>
+      </div>
+      <div class="caption c29b">
+        <span class="word">عَلْسَارِيَة<span class="tooltip">to the mast</span></span>.
+      </div>
+
+      <div class="caption c30a">
+        <span class="word">هَيْدَا<span class="tooltip">this</span></span>
+        <span class="word">لَلِّي<span class="tooltip">for whoever</span></span>
+        <span class="word">بْيِشُوف<span class="tooltip">sees</span></span>
+      </div>
+      <div class="caption c30b">
+        <span class="word">الحُوت<span class="tooltip">the whale</span></span>
+        <span class="word">أَوَّل<span class="tooltip">first</span></span>
+        <span class="word">وَاحِد<span class="tooltip">one</span></span>!
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

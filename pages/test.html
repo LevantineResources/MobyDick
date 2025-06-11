@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Page 25 - Scales by Height Only</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      overflow: hidden;
+    }
+
+    #wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;  /* horizontal centering */
+      align-items: flex-start;  /* top-aligned content */
+    }
+
+    #scaler {
+      width: 1024px;      /* Native design width */
+      height: 1536px;     /* Native design height */
+      transform-origin: top center;
+      position: relative;
+    }
+
+    .image-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .image-wrapper img {
+      height: 100%;
+      width: 100%;
+      display: block;
+    }
+
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .caption {
+      position: absolute;
+      font-size: 3.2vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: black;
+      pointer-events: auto;
+      line-height: 1.4;
+    }
+
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      bottom: 100%;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+
+    .caption126 {top: 25%;right: 56%;width: 30%;}
+    .caption127 {top: 25%;right: 13%;width: 24%;}
+    .caption128 {top: 56%;right: 55%;width: 35%;}
+    .caption129 {top: 56%;right: 10%;width: 31%;}
+    .caption130 {top: 87%;right: 56%;width: 38%;}
+    .caption131 {top: 88%;right: 7%;width: 39%;}
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="scaler">
+      <div class="image-wrapper">
+        <img src="../images/page25.png" alt="Page 25 Comic">
+        <div class="text-layer">
+          <div class="caption caption126">
+            <span class="word">المِيّ<span class="tooltip">The water</span></span> 
+            <span class="word">لَفَّت...<span class="tooltip">spun...</span></span> 
+            <span class="word">سَحَبِت<span class="tooltip">pulled</span></span> 
+            <span class="word">كِلّ<span class="tooltip">every</span></span> 
+            <span class="word">زَوْرَق<span class="tooltip">boat</span></span> 
+            <span class="word">وَبَشَر<span class="tooltip">and man</span></span> 
+            <span class="word">مَعَهَا.<span class="tooltip">with it.</span></span> 
+          </div>
+          <div class="caption caption127">
+            <span class="word">مَا<span class="tooltip">Nothing</span></span> 
+            <span class="word">بْقِي<span class="tooltip">remained</span></span> 
+            <span class="word">غَيْر<span class="tooltip">except</span></span> 
+            <span class="word">الهُدُوء...<span class="tooltip">silence...</span></span> 
+            <span class="word">وَالبَحِر<span class="tooltip">and the sea</span></span> 
+            <span class="word">بَلَع<span class="tooltip">swallowed</span></span> 
+            <span class="word">كِلّ<span class="tooltip">everything</span></span> 
+            <span class="word">شَيْ.<span class="tooltip">whole.</span></span> 
+          </div>
+          <div class="caption caption128">
+            <span class="word">كُنْت<span class="tooltip">I was</span></span> 
+            <span class="word">طَارِح<span class="tooltip">cast</span></span> 
+            <span class="word">فِي<span class="tooltip">into</span></span> 
+            <span class="word">المَيّ<span class="tooltip">the water</span></span> 
+            <span class="word">مِن<span class="tooltip">from</span></span> 
+            <span class="word">بَدِرِي...<span class="tooltip">early...</span></span> 
+            <span class="word">وَبِهَيك<span class="tooltip">and that’s how</span></span> 
+            <span class="word">نَجَوْت<span class="tooltip">I survived</span></span> 
+            <span class="word">بِالغَلَط.<span class="tooltip">by accident.</span></span> 
+          </div>
+          <div class="caption caption129">
+            <span class="word">نَفَس<span class="tooltip">A last</span></span> 
+            <span class="word">أَخِير...<span class="tooltip">breath...</span></span> 
+            <span class="word">وَطَلَع<span class="tooltip">and rose</span></span> 
+            <span class="word">النَّعْش<span class="tooltip">the coffin</span></span> 
+            <span class="word">عَلَى<span class="tooltip">to</span></span> 
+            <span class="word">الوَجّ.<span class="tooltip">the surface.</span></span> 
+          </div>
+          <div class="caption caption130">
+            <span class="word">النَّعْش<span class="tooltip">The coffin</span></span> 
+            <span class="word">صَار<span class="tooltip">became</span></span> 
+            <span class="word">مَلْجَأ...<span class="tooltip">a refuge...</span></span> 
+            <span class="word">وَالصَّدَاقَة<span class="tooltip">and friendship</span></span> 
+            <span class="word">صَارِت<span class="tooltip">became</span></span> 
+            <span class="word">خَلَاص.<span class="tooltip">salvation.</span></span> 
+          </div>
+          <div class="caption caption131">
+            <span class="word">لَيْلِة<span class="tooltip">A night</span></span> 
+            <span class="word">طَوِيلِة،<span class="tooltip">long,</span></span> 
+            <span class="word">وَالبَحِر<span class="tooltip">and the sea</span></span> 
+            <span class="word">مِثْل<span class="tooltip">like</span></span> 
+            <span class="word">قَلْب<span class="tooltip">a heart</span></span> 
+            <span class="word">فَارِغ.<span class="tooltip">empty.</span></span> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function scaleToFitHeightOnly() {
+      const scaler = document.getElementById('scaler');
+      const scale = window.innerHeight / 1536; // based on fixed height
+      scaler.style.transform = `scale(${scale})`;
+    }
+
+    window.addEventListener('load', scaleToFitHeightOnly);
+    window.addEventListener('resize', scaleToFitHeightOnly);
+  </script>
+</body>
+</html>

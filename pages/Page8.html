@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Page 8 - Verified Overlay with Tooltips</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .image-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 3.2vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: black;
+      pointer-events: auto;
+      line-height: 1.4;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      bottom: 100%;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+    .word:hover {
+      background-color: yellow;
+      color: black;
+    }
+    .caption43 {top: 30%;right: 54%;width: 15%;}
+    .caption44 {top: 29%;right: 11%;width: 29%;}
+    .caption45a {top: 62%;right: 54%;width: 60%;}
+    .caption45b {top: 41%;right: 54%;width: 60%;}
+    .caption46 {top: 61%;right: 8%;width: 33%;}
+    .caption47a {top: 85%;right: 64%;width: 50%;}
+    .caption47b {top: 92%;right: 59%;width: 50%;}
+    .caption48 {top: 88%;right: 11%;width: 28%;}
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/page8.png" alt="Page 8 Comic">
+    <div class="text-layer">
+      
+      <div class="caption caption43">
+        <span class="word">هَي!<span class="tooltip">Hey!</span></span> 
+      </div>
+
+      <div class="caption caption44">
+        <span class="word">صَابُوه<span class="tooltip">They hit it</span></span> 
+        <span class="word">بَسّ<span class="tooltip">but</span></span> 
+        <span class="word">الحُوت<span class="tooltip">the whale</span></span> 
+        <span class="word">هَرَب<span class="tooltip">fled</span></span> 
+        <span class="word">وَخَلَّف<span class="tooltip">and left behind</span></span> 
+        <span class="word">وَرَاه<span class="tooltip">behind him</span></span> 
+        <span class="word">دَم<span class="tooltip">blood</span></span> 
+        <span class="word">كْتِير<span class="tooltip">a lot</span></span> 
+      </div>
+
+      <div class="caption caption45a">
+        <span class="word">مُو هَاد!<span class="tooltip">Not that one!</span></span> 
+        <span class="word">مَا بَدِّي<span class="tooltip">I don’t want</span></span> 
+        <span class="word">هَالْحِيتَان<span class="tooltip">these whales</span></span> 
+        <span class="word">الصِّغَار!<span class="tooltip">the small ones!</span></span> 
+      </div>
+      <div class="caption caption45b">
+        <span class="word">أَنَا<span class="tooltip">I</span></span> 
+        <span class="word">بَدِّي<span class="tooltip">want</span></span> 
+        <span class="word">مُوبِي دِك!<span class="tooltip">Moby Dick!</span></span> 
+      </div>
+
+      <div class="caption caption46">
+        <span class="word">كِلّ مَا<span class="tooltip">Whenever</span></span> 
+        <span class="word">نِشُوف<span class="tooltip">we saw</span></span> 
+        <span class="word">حُوت<span class="tooltip">a whale</span></span> 
+        <span class="word">أَهَاب<span class="tooltip">Ahab</span></span> 
+        <span class="word">كَان يِسْأَل...<span class="tooltip">would ask...</span></span> 
+        <span class="word">هُو هُو؟<span class="tooltip">Is it him?</span></span> 
+        <span class="word">وَلَّا<span class="tooltip">or</span></span> 
+        <span class="word">بَعِيد؟<span class="tooltip">far away?</span></span> 
+      </div>
+
+      <div class="caption caption47a">
+        <span class="word">مَا عَاد<span class="tooltip">No longer</span></span> 
+        <span class="word">يْهِمُّه<span class="tooltip">he cares</span></span> 
+        <span class="word">نِصِيد...<span class="tooltip">to hunt...</span></span> 
+      </div>
+      <div class="caption caption47b">
+        <span class="word">بَسّ<span class="tooltip">just</span></span> 
+        <span class="word">يْهِمُّه<span class="tooltip">he cares</span></span> 
+        <span class="word">يُرْضِي<span class="tooltip">to satisfy</span></span> 
+        <span class="word">حِقْدُه<span class="tooltip">his hatred</span></span> 
+      </div>
+
+      <div class="caption caption48">
+        <span class="word">اللَّفِّينَا<span class="tooltip">We rounded</span></span> 
+        <span class="word">حَوَالِين<span class="tooltip">around</span></span> 
+        <span class="word">أَفْرِيقْيَا<span class="tooltip">Africa</span></span> 
+        <span class="word">وَفُوتْنَا<span class="tooltip">and entered</span></span> 
+        <span class="word">عالْمُحِيط<span class="tooltip">the ocean</span></span> 
+        <span class="word">الهِندِي<span class="tooltip">Indian</span></span> 
+      </div>
+
+      
+    </div>
+  </div>
+</body>
+</html>

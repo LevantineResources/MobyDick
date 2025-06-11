@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Page 24 - Verified Overlay with Tooltips</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .word:hover {
+      background-color: yellow;
+      color: black;
+    }
+    .image-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 3.2vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: black;
+      pointer-events: auto;
+      line-height: 1.4;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      bottom: 100%;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+
+.caption122 {top: 33%;right: 27%;width: 70%;}
+.caption123 {top: 64%;right: 59%;width: 60%;}
+.caption124 {top: 65%;right: 13%;width: 28%;}
+.caption125a {top: 90%;right: 62%;width: 75%;}
+.caption125b {top: 91%;right: 8%;width: 36%;}
+
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/page24.png" alt="Page 24 Comic">
+    <div class="text-layer">
+      
+<div class="caption caption122">
+  <span class="word">البِيكُود<span class="tooltip">The Pequod</span></span> 
+  <span class="word">غَرِقِت...<span class="tooltip">sank...</span></span> 
+  <span class="word">وَاللّي<span class="tooltip">and those who</span></span> 
+  <span class="word">عَلَيْهَا<span class="tooltip">were on it</span></span> 
+  <span class="word">غَرْقُوا<span class="tooltip">drowned</span></span> 
+  <span class="word">مَعْهَا.<span class="tooltip">with it.</span></span> 
+</div>
+
+<div class="caption caption123">
+  <span class="word">خُذ<span class="tooltip">Take</span></span> 
+  <span class="word">هَاد,<span class="tooltip">this,</span></span> 
+  <span class="word">يَا<span class="tooltip">O</span></span> 
+  <span class="word">شَرّ<span class="tooltip">evil</span></span> 
+  <span class="word">القُرُون!<span class="tooltip">of the ages!</span></span> 
+</div>
+
+<div class="caption caption124">
+  <span class="word">الحَبْل<span class="tooltip">The rope</span></span> 
+  <span class="word">لَفّ<span class="tooltip">wrapped</span></span> 
+  <span class="word">حَوَالَيْه...<span class="tooltip">around him...</span></span> 
+  <span class="word">وَسَحَبُه<span class="tooltip">and pulled him</span></span> 
+  <span class="word">لِقَلْب<span class="tooltip">to the heart</span></span> 
+  <span class="word">البَحِر.<span class="tooltip">of the sea.</span></span> 
+</div>
+
+<div class="caption caption125a">
+  <span class="word">وَهِيك<span class="tooltip">And so</span></span> 
+  <span class="word">خَلَص<span class="tooltip">ended</span></span> 
+  <span class="word">أَهَاب...<span class="tooltip">Ahab...</span></span> 
+</div>
+<div class="caption caption125b">
+  <span class="word">مَا<span class="tooltip">nothing</span></span> 
+  <span class="word">ضَلّ<span class="tooltip">remained</span></span> 
+  <span class="word">مِنه<span class="tooltip">of him</span></span> 
+  <span class="word">غَيْر<span class="tooltip">except</span></span> 
+  <span class="word">صَرْخِة<span class="tooltip">a scream</span></span> 
+  <span class="word">بِالرِّيح.<span class="tooltip">in the wind.</span></span> 
+</div>
+
+      
+    </div>
+  </div>
+</body>
+</html>
