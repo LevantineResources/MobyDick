@@ -5,7 +5,7 @@ This project is a comic adaptation of **Herman Melville's Moby Dick** retold in 
 
 # Read Here
 
--> [View the comic online](https://LevantineResources.github.io/MobyDick)
+-> [View the comic online](https://LevantineResources.github.io/MobyDick) <-
 
 Note : while the arabic text is read **right to left**, the panels are read **left to right** 
 
