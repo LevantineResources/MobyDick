@@ -1,14 +1,15 @@
-# موبي دك | Moby Dick - Comic Adaptation in Levantine Arabic
-
-This project is a comic adaptation of **Herman Melvil's Moby Dick** retold in **Levantine (Syrian) Arabic**, with a focus on **accessible language for Arabic learners**. Every line of text includes English glosses via **interactive tooltips** for immersive, comprehensible input.
+# Moby Dick | موبي دك
+## Comic Adaptation in Levantine Arabic
+This project is a comic adaptation of **Herman Melville's Moby Dick** retold in **Levantine (Syrian) Arabic**, with a focus on **accessible language for Arabic learners**. Every line of text includes English glosses via **interactive tooltips** for immersive, comprehensible input.
 
 
 # Read Here
 
 -> [View the comic online](https://LevantineResources.github.io/MobyDick)
 
-** Note that while the arabic text is read **right to left**, the panels are read **left to right**
-** This was the first book I adapted so I forgot to flip the panels before formatting the text
+Note : while the arabic text is read **right to left**, the panels are read **left to right** 
+
+This was the first book I adapted so I forgot to flip the panels before formatting the text
 
 ## This features:
 - **Complete story**, adapted into Syrian Arabic in an engaging, conversational style
